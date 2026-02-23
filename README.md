@@ -19,6 +19,10 @@ Site completo para a Padaria Dona Eugênia, com vitrine de produtos, carrinho de
 
 ---
 
+🖼️ Preview do Projeto
+
+<img src="https://github.com/AntonioLuiz-dev/tonicalc-react/blob/main/public/assets/mockup.png?raw=true" width="500px"/>
+
 ## Tecnologias
 
 - **HTML5** semântico
