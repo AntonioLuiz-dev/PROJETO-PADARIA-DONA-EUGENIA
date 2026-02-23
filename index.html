@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dona Eugênia - Padaria, Confeitaria & Café</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner">
+            <div class="logo-area">
+                <img src="./assets/logo.png" alt="Dona Eugênia" class="logo" />
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Nossa Padaria</a></li>
+                    <li><a href="#kits">Kits Festa</a></li>
+                    <li><a href="#super-kit">Super Kit Lanche</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#localização">Onde Estamos</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-contato" id="btnFaleConosco"><i class="fa fa-comments"></i> Fale Conosco</button>
+                <button class="btn-carrinho" id="btnCarrinho">
+                    <i class="fa fa-shopping-basket"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+            <button class="hamburger" id="hamburger"><i class="fa fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-nome">Dona Eugênia</p>
+            <p class="hero-tag">Padaria · Confeitaria · Café</p>
+            <h1>Ternura &amp; Sabor<br />de verdade</h1>
+            <p class="hero-sub">Feito com capricho e um toque especial que só a gente tem.</p>
+            <a href="#kits" class="btn-primary">Ver Kits Festa</a>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+        <div class="container sobre-grid">
+            <div class="sobre-img">
+                <div class="sobre-badge">Desde sempre com carinho</div>
+                <img src="./assets/logo.png" alt="Dona Eugênia" />
+            </div>
+            <div class="sobre-texto">
+                <span class="section-tag">Nossa Padaria</span>
+                <h2>É aconchego, é família</h2>
+                <p>Na Dona Eugênia, servimos delícias a qualquer hora do dia. Tudo feito com capricho e com um toque
+                    especial que só a gente tem. Tortas, salgados, docinhos, pães e muito mais - sempre fresquinhos e
+                    prontos pra alegrar sua festa ou seu dia a dia.</p>
+                <div class="sobre-destaques">
+                    <div class="destaque-item"><i class="fa fa-birthday-cake"></i><span>Kits Festa completos</span>
+                    </div>
+                    <div class="destaque-item"><i class="fa fa-cookie-bite"></i><span>Salgados e docinhos</span></div>
+                    <div class="destaque-item"><i class="fa fa-mug-hot"></i><span>Café fresquinho</span></div>
+                    <div class="destaque-item"><i class="fa fa-truck"></i><span>Encomendas pelo WhatsApp</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KITS FESTA -->
+    <section class="kits" id="kits">
+        <div class="container">
+            <span class="section-tag center">Comemore com a gente</span>
+            <h2 class="section-title center">Kits Festa</h2>
+            <p class="section-sub center">Tudo que você precisa em um só lugar. Escolha seu kit e faça seu pedido.</p>
+            <div class="kits-grid" id="kitsGrid">
+                <!-- Cards gerados pelo JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SUPER KIT LANCHE -->
+    <section class="super-kit" id="super-kit">
+        <div class="container">
+            <span class="section-tag center">Para eventos grandes</span>
+            <h2 class="section-title center">Super Kit Lanche</h2>
+            <p class="section-sub center">Ideal para festas, confraternizações e eventos corporativos.</p>
+            <div class="super-kits-grid" id="superKitsGrid"></div>
+
+            <div class="opcoes-lanche">
+                <h3>Opções de lanches disponíveis</h3>
+                <div class="opcoes-grid">
+                    <span>Hamburguinho recheado</span><span>Mini pizza</span><span>Mini cachorro quente</span>
+                    <span>Mini joelhinho</span><span>Mini empadinha</span><span>Mini pão de queijo</span>
+                    <span>Mini sonho</span><span>Mini croissant</span><span>Mini quindim</span>
+                    <span>Mini queijadinha</span><span>Mini muffin</span><span>Mini folhado</span>
+                    <span>Mini gamadinho</span><span>Mini banana de pijama</span><span>Mini rosca cremosa</span>
+                    <span>Mini sonho de noiva</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO / EXTRAS -->
+    <section class="cardapio" id="cardapio">
+        <div class="container">
+            <span class="section-tag center">Peça também</span>
+            <h2 class="section-title center">Outros Produtos</h2>
+            <div class="extras-grid" id="extrasGrid"></div>
+
+            <div class="torta-salgada">
+                <h3>Torta Salgada</h3>
+                <div class="torta-cards">
+                    <div class="torta-card"
+                        onclick="addToCart({name: 'Torta Salgada - 50 pessoas', price: 130.00, id:'ts50'})">
+                        <div class="torta-serve">Serve em média <strong>50 pessoas</strong></div>
+                        <div class="torta-preco">R$ 130,00</div>
+                        <button class="btn-add">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="torta-card"
+                        onclick="addToCart({name: 'Torta Salgada - 100 pessoas', price: 249.90, id:'ts100'})">
+                        <div class="torta-serve">Serve em média <strong>100 pessoas</strong></div>
+                        <div class="torta-preco">R$ 249,90</div>
+                        <button class="btn-add">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="salgados-info">
+                <h3>Salgadinhos avulsos</h3>
+                <div class="salgados-cards">
+                    <div class="salgado-card"
+                        onclick="addToCart({name: 'Salgadinhos Fritos (kg)', price: 35.90, id:'sf-kg'})">
+                        <i class="fa fa-drumstick-bite"></i>
+                        <span>Salgadinhos Fritos por kg</span>
+                        <strong>R$ 35,90</strong>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                    <div class="salgado-card"
+                        onclick="addToCart({name: 'Salgado Frito (cento)', price: 55.00, id:'sf-cento'})">
+                        <i class="fa fa-drumstick-bite"></i>
+                        <span>Salgado Frito por cento</span>
+                        <strong>R$ 55,00</strong>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="localizacao" id="localização">
+        <div class="container">
+            <span class="section-tag center">Venha nos visitar</span>
+            <h2 class="section-title center">Onde Estamos</h2>
+            <div class="lojas-grid">
+                <div class="loja-card ativo"
+                    data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2!2d-43.3821!3d-22.6123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Autom%C3%B3vel+Club%2C+3361%2C+Fragoso!5e0!3m2!1spt-BR!2sbr!4v1"
+                    onclick="trocarMapa(this)">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <h4>Fragoso - Unidade 1</h4>
+                    <p>Av. Automóvel Club, 3361</p>
+                    <span class="loja-ver">Ver no mapa</span>
+                </div>
+                <div class="loja-card"
+                    data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2!2d-43.3851!3d-22.6145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Autom%C3%B3vel+Club%2C+2702%2C+Fragoso!5e0!3m2!1spt-BR!2sbr!4v1"
+                    onclick="trocarMapa(this)">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <h4>Fragoso - Unidade 2</h4>
+                    <p>Av. Automóvel Club, 2702</p>
+                    <span class="loja-ver">Ver no mapa</span>
+                </div>
+                <div class="loja-card"
+                    data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.8!2d-43.3012!3d-22.5934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRua+Brasil%2C+221%2C+Piabet%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1"
+                    onclick="trocarMapa(this)">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <h4>Piabetá</h4>
+                    <p>Rua Brasil, 221</p>
+                    <span class="loja-ver">Ver no mapa</span>
+                </div>
+            </div>
+            <div class="mapa-wrapper">
+                <iframe id="mapaFrame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2!2d-43.3821!3d-22.6123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Autom%C3%B3vel+Club%2C+3361%2C+Fragoso!5e0!3m2!1spt-BR!2sbr!4v1"
+                    width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Mapa Dona Eugênia"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="Dona Eugênia" />
+                <p>Ternura &amp; Sabor</p>
+            </div>
+            <div class="footer-info">
+                <h4>Encomendas</h4>
+                <p><i class="fa-brands fa-whatsapp"></i> (21) 96554-7469</p>
+                <p>Aceitamos Pix, cartão de crédito e débito</p>
+                <p>Parcelamos em 3x sem juros acima de R$ 100,00</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#kits">Kits Festa</a></li>
+                    <li><a href="#super-kit">Super Kit Lanche</a></li>
+                    <li><a href="#localização">Onde Estamos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Dona Eugênia - Padaria, Confeitaria &amp; Café. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- CARRINHO DRAWER -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3><i class="fa fa-shopping-basket"></i> Seu Carrinho</h3>
+            <button id="closeCart"><i class="fa fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Seu carrinho está vazio.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: <strong id="cartTotal">R$ 0,00</strong></div>
+            <button class="btn-primary full" id="btnFinalizarPedido">Finalizar Pedido</button>
+        </div>
+    </div>
+    <div class="overlay-bg" id="overlayBg"></div>
+
+    <!-- MODAL CHECKOUT -->
+    <div class="modal" id="modalCheckout">
+        <div class="modal-box checkout-box">
+            <button class="modal-close" id="closeCheckout"><i class="fa fa-times"></i></button>
+            <h3>Finalizar Pedido</h3>
+
+            <div class="checkout-resumo" id="checkoutResumo"></div>
+            <div class="checkout-total">Total: <strong id="checkoutTotal"></strong></div>
+
+            <p class="checkout-label">Como você quer pagar?</p>
+
+            <div class="checkout-opcoes">
+
+                <button class="checkout-btn pix" id="btnPagarPix">
+                    <span class="checkout-icon">&#9650;</span>
+                    <div>
+                        <strong>Pix</strong>
+                        <span>Chave copiada ou QR Code</span>
+                    </div>
+                </button>
+
+                <button class="checkout-btn cartao" id="btnPagarCartao">
+                    <i class="fa fa-credit-card"></i>
+                    <div>
+                        <strong>Cartão de Crédito ou Débito</strong>
+                        <span>Via Mercado Pago</span>
+                    </div>
+                </button>
+
+                <button class="checkout-btn whatsapp" id="btnPagarWhatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <strong>Combinar pelo WhatsApp</strong>
+                        <span>Acertamos na entrega</span>
+                    </div>
+                </button>
+
+            </div>
+
+            <!-- PAINEL PIX -->
+            <div class="pix-painel" id="pixPainel">
+                <p class="pix-instrucao">Copie a chave Pix abaixo e faça a transferência. Depois envie o comprovante
+                    pelo WhatsApp.</p>
+                <div class="pix-chave-wrapper">
+                    <span id="pixChaveTexto">21965547469</span>
+                    <button id="btnCopiarPix">Copiar</button>
+                </div>
+                <p class="pix-tipo">Chave: Telefone</p>
+                <button class="btn-primary full" id="btnConfirmarPix">Confirmar pelo WhatsApp</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAL FALE CONOSCO -->
+    <div class="modal" id="modalContato">
+        <div class="modal-box">
+            <button class="modal-close" id="closeModal"><i class="fa fa-times"></i></button>
+            <h3>Fale Conosco</h3>
+            <p>Mande sua mensagem ou dúvida. Respondemos pelo WhatsApp.</p>
+            <form id="formContato">
+                <input type="text" placeholder="Seu nome" required id="contatoNome" />
+                <input type="tel" placeholder="Seu WhatsApp" required id="contatoTel" />
+                <textarea placeholder="Sua mensagem ou pedido especial" rows="4" required id="contatoMsg"></textarea>
+                <button type="submit" class="btn-primary full">Enviar pelo WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
